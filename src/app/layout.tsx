@@ -57,7 +57,14 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en" className={`${geist.variable}`}>
-			<body>{children}</body>
+			<body>
+				<script
+					defer
+					src="https://cloud.umami.is/script.js"
+					data-website-id="b7261bdc-0100-49b9-8b1b-558d6a47b816"
+				/>
+				{children}
+			</body>
 		</html>
 	);
 }
